@@ -18,7 +18,7 @@ INSERT INTO Custom_Clothes VALUES (13, "Kids Black Tshirt", "S",15.00,10);
 INSERT INTO Custom_Clothes VALUES (14, "Kids Black Tshirt", "M",15.00,12);
 INSERT INTO Custom_Clothes VALUES (15, "Kids Black Tshirt", "L", 15.00,12);
 
---display the database ordered by price
+--Display the database ordered by price
 SELECT * FROM custom_clothes ORDER BY price;
 
 --What is the total quantity of items in stock?
