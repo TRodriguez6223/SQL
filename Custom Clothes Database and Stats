@@ -1,0 +1,26 @@
+--Create a custom store database
+
+CREATE TABLE Custom_Clothes (id Integer primary key, product TEXT, size TEXT, price INTEGER, In_Stock INTEGER);
+
+INSERT INTO Custom_Clothes VALUES (1, "Black TShirt", "S", 20.00, 23);
+INSERT INTO Custom_Clothes VALUES (2, "Black TShirt", "M", 20.00, 25);
+INSERT INTO Custom_Clothes VALUES (3, "Black TShirt", "L", 20.00, 15);
+INSERT INTO Custom_Clothes VALUES (4, "Black TShirt", "XL", 25.00, 22);
+INSERT INTO Custom_Clothes VALUES (5, "White TShirt", "S", 20.00,21);
+INSERT INTO Custom_Clothes VALUES (6, "White TShirt", "M", 20.00, 24);
+INSERT INTO Custom_Clothes VALUES (7, "White TShirt", "L", 20.00,16);
+INSERT INTO Custom_Clothes VALUES (8, "White TShirt", "XL", 25.00, 28);
+INSERT INTO Custom_Clothes VALUES (9, "Grey TShirt", "S", 20.00, 18);
+INSERT INTO Custom_Clothes VALUES (10, "Grey TShirt", "M", 20.00, 19);
+INSERT INTO Custom_Clothes VALUES (11, "Grey TShirt", "L", 20.00,14);
+INSERT INTO Custom_Clothes VALUES (12, "Grey TShirt", "XL", 25.00,22);
+INSERT INTO Custom_Clothes VALUES (13, "Kids Black Tshirt", "S",15.00,10);
+INSERT INTO Custom_Clothes VALUES (14, "Kids Black Tshirt", "M",15.00,12);
+INSERT INTO Custom_Clothes VALUES (15, "Kids Black Tshirt", "L", 15.00,12);
+
+--display the database ordered by price
+SELECT * FROM custom_clothes ORDER BY price;
+
+--What is the total quantity of items in stock?
+SELECT SUM (in_stock) FROM Custom_Clothes;
+
